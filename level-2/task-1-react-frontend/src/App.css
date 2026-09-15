@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  padding: 300px;
+}
+
+h1 {
+  text-align: center;
+  margin-buttom: 30px;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220, 1fr));
+  gap: 20px;
+  max-width: 110px;
+  margin: auto;
+}
+
+.product-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h2 {
+  margin-top: 0;
+}
+
+@media (max-eidth: 600px) {
+  .app {
+    padding: 15px;
+  }
+  h1 {
+    font-size: 26px;
+  }
+}
